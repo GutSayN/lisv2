@@ -1,0 +1,19 @@
+{
+    "name": "Mi Lista Videos _PWA NORMA SUYURI",
+    "short_name": "Mi lista videos _sayuri ",
+    "description": "Lista videos_ Norma Suyuri ",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation":"portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#4d0343",
+    "escope":"./",
+
+    "icons": [
+      {
+        "src":"./Icono.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+   
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="mt-5">Bienvenido a mi aplicación</h1>
+        <br>
+        <button class="btn btn-primary" onclick="mostrarMensaje(); return false;">Soy un botón</button>
+    </div>
+    <script src="../js/ejemplo1.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => console.log('Service Worker registrado con éxito:', registration))
+            .catch(error => console.error('Error al registrar el Service Worker:', error));
+        }
+      </script>
+</body>
+</html>

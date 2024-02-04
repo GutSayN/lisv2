@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web && APP</title>
+    <link rel="stylesheet" href="./estiloIndex.css">
+    <link rel="stylesheet" href="./estiloMenu.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="manifest" href="./manifest.json">
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("sw.js");
+        }
+      </script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        #idContenedorIndex {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #idContenidoIndex {
+            flex-grow: 1;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        #idEncabezadoIndex {
+            color: #fff;
+        }
+
+        #idMenuIndex {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-toggler-icon {
+                color: #04041d;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="idContenedorIndex">
+        <header id="idEncabezadoIndex" class="bg-dark text-center p-3">
+            <h1>Mi Pagina Web && APP</h1>
+        </header>
+        <nav id="idMenuIndex" class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./inicio.html" target="iframeContenido">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ejemplo1.html" target="iframeContenido">Ejemplo 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./listavideos.html" target="iframeContenido">Lista videos</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <section id="idContenidoIndex" class="container">
+            <iframe src="paginas/inicio.html" frameborder="0" name="iframeContenido"></iframe>
+        </section>
+        <footer id="idPieIndex" class="bg-dark text-white text-center p-3">
+            <p>Aqui va el pie de pagina</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

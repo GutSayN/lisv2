@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en dispositivos pequeños */
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .img-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black; /* Ajusta el color del texto según sea necesario */
+        }
+    </style>
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="img-container">
+            <img src=" https://cdn.atomix.vg/wp-content/uploads/2023/09/sailor.jpg" class="img-fluid" alt="Portada">
+            <h1 class="img-text">BIENVENIDO A MI APP</h1>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => console.log('Service Worker registrado con éxito:', registration))
+            .catch(error => console.error('Error al registrar el Service Worker:', error));
+        }
+      </script>
+</body>
+</html>

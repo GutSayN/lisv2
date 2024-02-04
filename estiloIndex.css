@@ -1,0 +1,49 @@
+
+body{
+    background-color: azure;
+}
+#idContenedorIndex{
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 90%;
+    height: 600px;
+}
+
+
+#idEncabezadoIndex{
+    margin: -21px auto;
+    padding: 0px auto;
+    width: 100%;
+    height: 250px;
+    background-image: url( https://wallpapers-clan.com/wp-content/uploads/2023/11/aesthetic-sailor-moon-anime-desktop-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size:covers;
+}
+
+#idMenuIndex{
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 100%;
+    height: 100px;
+
+}
+
+#idContenidoIndex{
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 100%;
+    height: 400px;  
+    background-color: white;
+}
+
+
+#idPieIndex{
+    margin: 0px auto;
+    padding: 0px auto;
+    width: 100%;
+    height: 150px;
+    background-image: url(https://www.solofondos.com/wp-content/uploads/2021/08/thumb-1920-962682.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
